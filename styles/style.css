@@ -20,6 +20,59 @@ body {
   letter-spacing: normal;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2rem 2rem 0;
+}
+
+li {
+  list-style-type: none;
+  padding: 0 1rem;
+  opacity: .75;
+  /* display: inline-block; */
+}
+
+.nav__gmail {
+  margin-left: auto;
+}
+
+.nav__apps-img {
+  background-image: url("../images/apps.png");
+  height: 1.8rem;
+  margin: 0 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nav__apps-img:hover {
+  background-image: url("../images/apps-hover.png");
+  cursor: pointer;
+}
+
+.nav__signin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: .3rem 1.2rem;
+  margin-left: 1rem;
+  background-image: linear-gradient(#4387fd, #4683ea);
+  opacity: 1;
+  border: 1px solid #4285f4;
+  border-radius: .2rem;
+}
+
+.nav__signin a {
+  color: white;
+  font-weight: 700;
+}
+
 main {
   width: 58.4rem;
   margin: 0 auto;
@@ -82,7 +135,6 @@ main {
 .btn,
 .btn:link,
 .btn:visited {
-  text-decoration: none;
   border: 1px solid transparent;
   padding: 1.1rem 1.6rem;
   margin: 0 .6rem;
