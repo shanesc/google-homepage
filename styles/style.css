@@ -20,10 +20,23 @@ body {
   letter-spacing: normal;
 }
 
-a {
+a,
+a:link,
+a:visited {
   text-decoration: none;
   color: black;
 }
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus,
+a:active {
+  outline: none;
+  text-decoration: underline;
+}
+
 
 .nav {
   display: flex;
@@ -36,7 +49,6 @@ li {
   list-style-type: none;
   padding: 0 1rem;
   opacity: .75;
-  /* display: inline-block; */
 }
 
 .nav__gmail {
@@ -59,13 +71,22 @@ li {
 .nav__signin {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding: .3rem 1.2rem;
+  align-items: center;
+  height: 3rem;
+  padding: 0 1.2rem;
   margin-left: 1rem;
   background-image: linear-gradient(#4387fd, #4683ea);
   opacity: 1;
   border: 1px solid #4285f4;
   border-radius: .2rem;
+}
+
+.nav__signin:hover {
+  box-shadow: 0 .1rem 0 rgba(0, 0, 0, .15);
+}
+
+.nav__signin:hover a {
+  text-decoration: none;
 }
 
 .nav__signin a {
@@ -147,12 +168,14 @@ main {
 .btn:hover {
   box-shadow: 0 .1rem .1rem rgba(0, 0, 0, .1);
   border: 1px solid #c6c6c6;
+  text-decoration: none;
 }
 
 .btn:focus,
 .btn:active {
   outline: none;
   border: 1px solid #4d90fe;
+  text-decoration: none;
 }
 
 .btn--grey {
