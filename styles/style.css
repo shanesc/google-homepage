@@ -24,7 +24,7 @@ a,
 a:link,
 a:visited {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 a:hover {
@@ -42,7 +42,7 @@ a:active {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 2rem 2rem 0;
+  margin: 1.6rem 1.5rem 0;
 }
 
 li {
@@ -51,7 +51,7 @@ li {
   opacity: .75;
 }
 
-.nav__gmail {
+.u-margin-left-auto {
   margin-left: auto;
 }
 
@@ -186,4 +186,32 @@ main {
 .btn--grey:hover {
   background-image: linear-gradient(#f8f8f8, #f1f1f1);
   color: #222;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 4rem;
+  width: 100%;
+  padding: 0 .5rem;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 1.4rem;
+  color: #5f6368;
+}
+
+.footer-container li {
+  opacity: 1;
+}
+
+.footer-container li:not(:last-child) {
+  margin-right: 1rem;
 }
